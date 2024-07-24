@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main{
+    public  static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+        System.out.print("Enter decimal number: ");
+        int dec=a.nextInt();
+        String binary=Integer.toBinaryString(dec);
+        String octal=Integer.toOctalString(dec);
+        System.out.println(binary);
+        System.out.println(octal);
+    }
+}
