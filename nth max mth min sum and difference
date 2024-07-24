@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+        int size=a.nextInt();
+        int[] arr=new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=a.nextInt();
+        }
+        int M=a.nextInt();
+        int N=a.nextInt();
+        Arrays.sort(arr);
+        int mthmax=arr[arr.length-M];
+        int nthmin=arr[N-1];
+        int sum=mthmax+nthmin;
+        int difference=mthmax-nthmin;
+        System.out.println("max element is:"+mthmax);
+        System.out.println("min element is:"+nthmin);
+        System.out.println(sum);
+        System.out.println(difference);
+
+    }
+}
