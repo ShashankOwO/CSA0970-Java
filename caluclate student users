@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+        System.out.println("total users: ");
+        int total_users=a.nextInt();
+        System.out.println("staff users: ");
+        int staff_users=a.nextInt();
+        int non_teach=staff_users/3;
+        int student_user=total_users-(staff_users+non_teach);
+        System.out.println("student users: "+student_user);
+    }
+}
